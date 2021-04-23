@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href='styles.css'>
+    <title>Weather App</title>
+</head>
+<body>  
+
+    <div class="container my-5 mx-auto">
+
+        <h1 class="text-muted text-center my-4">
+            DevNation Weather App
+        </h1>
+
+        <!-- Form -->
+        <form action="" class="change-location my-4 text-center text-muted">
+            <label for="city">Enter a location for weather information</label>
+            <input type='text' name="city" class="form-control p-4">
+        </form>
+
+        <!-- List of Cities -->
+        <ul class="list-group search-list mx-auto">
+
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>City Name 3</span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>City Name 2</span>
+            </li>
+        </ul>
+
+        <!-- Information about the Weather. -->
+        <div class="card shadow-lg rounded d-none">
+            <!-- Img for day or night -->
+            <img src="https://via.placeholder.com/400x300" class="time card-img-top">
+            <div class="icon bg-light mx-auto text-center">
+                <img src="">
+            </div>
+            <!-- Weather Info -->
+            <div class="text-muted text-uppercase text-center details">
+                <h5 class="my-5">City Name</h5>
+                <div class="my-3">Weather Condition</div>
+                <div class="display-4 my-4">
+                    <span>25</span>
+                    <span>&deg;C</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script/app.js"></script>
+    <script src="script/forecast.js"></script>
+    
+    
+</body>
+</html>
