@@ -21,13 +21,6 @@ const getCity = async (city) => {
 }
 
 
-
-
-// getCity('lahore')
-//     .then(data => console.log(data))
-//     .catch(err => console.log(err))
-
-
 const getWeather = async (id) => {
 
     const baseURL = 'http://dataservice.accuweather.com/currentconditions/v1/';
@@ -40,7 +33,7 @@ const getWeather = async (id) => {
     return data[0]
 }
 
-//let's join the two methods together. 
+//You can implement both functions together like this
 
 // getCity('lahore')
 //     .then(data => {

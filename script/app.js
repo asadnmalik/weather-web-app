@@ -8,15 +8,13 @@ const searchList = document.querySelector('.search-list')
 //Update City
 const updateCity = async (city) => {
     const cityDetails = await getCity(city)
-    
+    //console.log(cityDetails)
     const weather = await getWeather(cityDetails.Key)
+    console.log(weather)
 
-    return {cityDetails, weather}
+    return {cityDetails, weather} //shorthand for {cityDetails: cityDetails, weather: weather}
 
 }
-
-
-
 
 //On Enter do this
 cityForm.addEventListener('submit', (e) => {
@@ -35,9 +33,6 @@ cityForm.addEventListener('submit', (e) => {
 
 })
 
-
-
-
 // Update UI
 
 const card = document.querySelector('.card');
@@ -47,6 +42,7 @@ const updateUI = (data) => {
 
     // const cityDetails = data.cityDetails;
     // const weather = data.weather;
+    // The line below is a shorthand of the two lines of code above.
 
     const {cityDetails, weather} = data;
     details.innerHTML = `
@@ -58,6 +54,7 @@ const updateUI = (data) => {
         </div>
     `
 
+    // Setting day/night image
     let timeSource = null;
 
     if (weather.IsDayTime) {
